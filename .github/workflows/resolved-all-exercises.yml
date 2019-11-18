@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions-hub/docker@v1.0.0
+    - name: Docker Action
+      uses: zenato/docker-action@v1.0.0
     - name: Check if all exercises were solved correctly
       run: docker run -v $(pwd)/foo-bar:/opt/project byivo/mdc-php-checker:foo-bar
       
