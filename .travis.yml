@@ -3,7 +3,7 @@ services:
   - docker
 
 script:
-  - docker run -v $(pwd)/foo-bar:/opt/project -d  byivo/mdc-php-checker:foo-bar
+  - docker run -v $(pwd)/foo-bar:/opt/project byivo/mdc-php-checker:foo-bar
 
 git:
   quiet: false
