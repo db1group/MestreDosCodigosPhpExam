@@ -7,12 +7,14 @@ on:
 
 jobs:
   build:
+    container:
+      image: byivo/mdc-php-checker:foo-bar
+      volumes:
+        - foo-bar:/opt/project
     
     runs-on: ubuntu-latest
 
     steps:
     - name: Check if all exercises were solved correctly
-      run: |
-        - pwd
-        - docker run -v $(pwd)/foo-bar:/opt/project byivo/mdc-php-checker:foo-bar
+      run: echo 'Test'
       
