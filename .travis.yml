@@ -1,0 +1,13 @@
+language: php
+services:
+  - docker
+
+script:
+  - docker run -v $(pwd)/foo-bar:/opt/project -d  byivo/mdc-php-checker:foo-bar
+
+git:
+  quiet: false
+
+branches:
+  except:
+    - master
