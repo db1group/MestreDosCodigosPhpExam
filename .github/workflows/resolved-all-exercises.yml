@@ -16,5 +16,5 @@ jobs:
 
     steps:
     - name: Check if all exercises were solved correctly
-      run: echo 'Test'
+      run: docker run byivo/mdc-php-checker:foo-bar
       
