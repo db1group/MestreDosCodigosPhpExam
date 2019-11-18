@@ -7,10 +7,10 @@ on:
 
 jobs:
   build:
-    container:
-      image: byivo/mdc-php-checker:foo-bar
-      volumes:
-        - foo-bar:/opt/project
+    #container:
+    #  image: byivo/mdc-php-checker:foo-bar
+    #  volumes:
+    #    - foo-bar:/opt/project
     
     runs-on: ubuntu-latest
 
@@ -18,5 +18,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@master
       - name: Check if all exercises were solved correctly
-        run: vendor/bin/phpunit
+        run: docker run -v $(pwd)/foo-bar:/opt/project byivo/mdc-php-checker:foo-bar
       
