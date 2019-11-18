@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions-hub/docker@v1.0.0
+    - name: Check if all exercises were solved correctly
+      run: docker run -v $(pwd)/foo-bar:/opt/project byivo/mdc-php-checker:foo-bar
+      
