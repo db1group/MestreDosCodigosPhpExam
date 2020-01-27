@@ -88,7 +88,7 @@ valor = 0
 retorno = Este valor não é válido
 ```
 
-### *(fizzbuzz)* FizzBuzz é um jogo usado para ensinar divisão, onde pessoas sentam-se em formato de círculo e começam a contar em voz alta; Sempre que um número for divisível por 3, deve-se dizer Fizz ao invés do número e sempre que um número for divisível por 5, deve-se dizer Buzz; Caso seja divisível tanto por 3 quanto por 5, deve-se dizer FizzBuzz. Você deve criar um algoritmo que reproduza essa brincadeira onde a entrada será um número inteiro e a saída vai ser o Fizz, Buzz, FizzBuzz ou o próprio número.
+### *(fizz-buzz)* FizzBuzz é um jogo usado para ensinar divisão, onde pessoas sentam-se em formato de círculo e começam a contar em voz alta; Sempre que um número for divisível por 3, deve-se dizer Fizz ao invés do número e sempre que um número for divisível por 5, deve-se dizer Buzz; Caso seja divisível tanto por 3 quanto por 5, deve-se dizer FizzBuzz. Você deve criar um algoritmo que reproduza essa brincadeira onde a entrada será um número inteiro e a saída vai ser o Fizz, Buzz, FizzBuzz ou o próprio número.
 Exemplos:
 ```sh
 ~$> 1
