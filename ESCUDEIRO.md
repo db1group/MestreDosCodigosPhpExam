@@ -73,7 +73,24 @@ retorno = Existem 1 letra 'a' na string ca.
 
 ### *(palindrome)* Desenvolva um sistema que recebe uma lista de frases e mostre na tela apenas as frases que são um [palíndromo](https://brasilescola.uol.com.br/o-que-e/portugues/o-que-e-palindromo.htm).
 
-### *(fibonacci)* Desenvolva o algoritmo de [Fibonacci](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci):
+### *(fibonacci)* Seguinto o algoritmo de [Fibonacci](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci), implemente um algorítmo PHP que recebe um número *n* e retorne o n-ésimo número da sequência de fibonacci em menos de X segundos.
+Exemplos:
+```sh
+$~> 1
+1
+```
+```sh
+$~> 2
+1
+```
+```sh
+$~> 8
+21
+```
+```sh
+$~> 37
+24157817
+```
 
 ### *(atm)* Desenvolva um algoritmo de caixa eletrônico que retorne o menor número possível de cédulas de acordo com o valor desejado para saque. Considere que existem cédulas de 100, 50, 20, 10, 5, 1. O usuário pode sacar apenas valores inteiros (sem centavos) e o caixa eletrônico tem um número infinito de cédulas. O retorno do sistema deverá ser uma string e ter o seguinte formato:
 Ex1:
