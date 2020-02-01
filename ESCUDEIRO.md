@@ -4,7 +4,7 @@ Para validar a resolução das suas questões, veja as [instruções na página 
 
 > Dica: Use e abuse dos seus conhecimentos de orientação à objetos, separação por namespaces e testes. Lembre-se que aqui não existe over engineering!
 
-### *(variables)* Imprima as letras das opções abaixo que são nomes INVÁLIDOS para variáveis:
+### *(variables)* Imprima, separadas por espaço, as letras das opções abaixo que são nomes INVÁLIDOS para variáveis:
 * A)  $escudeiro
 * B)  $1mestre 	 
 * C) $_cavaleiro
@@ -31,7 +31,7 @@ try{
 * D) O try deve ter um catch ou um finally   
 
 
-### *(superglobal)* Imprima as letras das opções abaixo que são variáveis superglobais:
+### *(superglobal)* Imprima, separadas por espaço, as letras das opções abaixo que são variáveis superglobais:
 * A) $_GOT
 * B) $_ENV 	 
 * C) $_COOKIES
