@@ -187,12 +187,21 @@ $~> 3 + 1 / 1 * 5 + 1
 ### *(secret-salt)* Você deve retornar um hash feito com o algoritmo SHA256, usando de entrada um valor provido pelo usuário, visando garantir que o valor original nunca seja descoberto. Para adicionar uma segurança extra, não esqueça de salgar esse hash com a variável de ambiente `HASH_SALTING_VALUE`.
 
 ### *(pimp-my-log)* Seu sistema processa milhares de pagamentos ao dia e registra diversos logs para monitorar o estado e alimentar métricas. Com a nova LGPD entrando em vigor, não podemos mais registrar dados pessoais do pagador de cada transação, então sua responsabilidade é limpar esses logs antes do armazenamento.
-Apesar de variar como é exibido, cada linha do log possui um IP, número de cartão de crédito, dígito verificador e data de vencimento; Todas essas informações devem ser substituídas por *.
+Apesar de variar como é exibido, cada linha do log poderá conter as seguintes informações (que devem ser substituídas pelo conteúdo em parênteses):
+
+* IP (`1.21.123.255` -> `***.***.***.***`)
+* Número de cartão de crédito (`5124 1251 1223 2523` -> `5124 **** **** 2523`)
+* Dígito verificador (`cvv: 82` -> `cvv: ***`)
+* Data de vencimento (`exp date: 10/22` -> `exp date: **/****`)
+
+**Observação:** Cada sistema costuma logar as informações de forma diferente, então pequenas divergências podem ocorrer e devem ser tratadas pelo seu código.
+
 ```sh
-$-> 123.123.123.123 - [10/Jan/2020:00:23:48 -0300] "POST /payment HTTP/1.0" Payment confirmed with credit card 5124.1251.1223.2523, cvv: 827, exp date: 09/22"
-***.***.***.*** - [10/Jan/2020:00:23:48 -0300] "POST /payment HTTP/1.0" Payment confirmed with credit card ****.****.****.****, cvv: ***, exp date: **/**"
+$-> 123.123.1.21 - [10/Jan/2020:00:23:48 -0300] "POST /payment HTTP/1.0" Payment confirmed with credit card 5124 1251 1223 2523, cvv: 827, exp date: 09/22"
+***.***.***.*** - [10/Jan/2020:00:23:48 -0300] "POST /payment HTTP/1.0" Payment confirmed with credit card 
+5124 **** **** 2523, cvv: ***, exp date: **/****"
 ```
 ```sh
-$-> 123.123.123.123 - [10/Jan/2020:00:23:48 -0300] "POST /payment HTTP/1.0" Credit card 5124.1251.1223.2523, cvv 827, expiration date 09/22 had the payment refused"
-***.***.***.*** - [10/Jan/2020:00:23:49 -0300] "POST /payment HTTP/1.0" Credit card ****.****.****.****, cvv ***, expiration date **/** had the payment refused"
+$-> 123.123.123.123 - [10/Jan/2020:00:23:48 -0300] "POST /payment HTTP/1.0" Credit card 5124 1251 1223 2523, cvv 827, expiration date 09/22 had the payment refused"
+***.***.***.*** - [10/Jan/2020:00:23:49 -0300] "POST /payment HTTP/1.0" Credit card 5124 **** **** 2523, cvv ***, expiration date **/**** had the payment refused"
 
