@@ -95,8 +95,8 @@ $~> 37
 ### *(atm)* Desenvolva um algoritmo de caixa eletrônico que retorne o menor número possível de cédulas de acordo com o valor desejado para saque. Considere que existem cédulas de 100, 50, 20, 10, 5, 1. O usuário pode sacar apenas valores inteiros (sem centavos) e o caixa eletrônico tem um número infinito de cédulas. O retorno do sistema deverá ser uma string e ter o seguinte formato:
 Ex1:
 ```
-valor = 299
-retorno = [100 => 2, 50 => 1, 20 => 2, 5 => 1, 2 => 2]
+valor = 289
+retorno = [100 => 2, 50 => 1, 20 => 1, 10 => 1, 5 => 1, 1 => 4]
 ```
 
 Ex2:
