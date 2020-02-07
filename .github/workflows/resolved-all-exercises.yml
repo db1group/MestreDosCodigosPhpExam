@@ -1,4 +1,4 @@
-name: Check exercises
+name: Check if all exercises were properly solved
 
 on:
   pull_request:
@@ -6,17 +6,19 @@ on:
     - master
 
 jobs:
-  build:
-    #container:
-    #  image: byivo/mdc-php-checker:foo-bar
-    #  volumes:
-    #    - foo-bar:/opt/project
-    
+  checking-solutions:
+    name: Checking ${{ matrix.exercise }} solution
     runs-on: ubuntu-latest
-
+    strategy:
+      fail-fast: false
+      matrix:
+        exercise: [atm, count-a, calculator, superglobal, ddos-tracker, palindrome, trouble-array, fibonacci, variables, fizz-buzz, pimp-my-log, secret-salt, error-in-try]
     steps:
-      - name: Checkout code
+      - name: Checkout ${{ github.actor }} code
         uses: actions/checkout@master
-      - name: Check if all exercises were solved correctly
-        run: docker run -v $(pwd)/foo-bar:/opt/project byivo/mdc-php-checker:foo-bar
-      
+
+      - name: Pulling ${{ matrix.exercise }} docker image
+        run: docker pull byivo/mdc-php-checker:${{ matrix.exercise }}
+
+      - name: Running ${{ matrix.exercise }} tests against proposed solution
+        run: docker run -v $(pwd)/${{ matrix.exercise }}:/opt/project/public byivo/mdc-php-checker:${{ matrix.exercise }}
