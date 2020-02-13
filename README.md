@@ -20,8 +20,8 @@ Crie uma branch no modelo seu_usuario_do_github/prova_que_esta_fazendo:
 git checkout -b ByIvo/escudeiro
 ```
 
-Crie as soluções no seguinte padrão:
-Legenda: **Diretório**, *Arquivo* e [...] (outros arquivos e pastas quaisquer)
+Crie as soluções no seguinte padrão:  
+Legenda: **Diretório**, *Arquivo* e [...] (outros arquivos e pastas quaisquer)  
 
  **MestreDosCodigosPhpExam**
 |
