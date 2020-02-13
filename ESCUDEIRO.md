@@ -146,7 +146,7 @@ $~> 2019-05-13 11:36:23
 America/Yellowknife
 ```
 
-### *(calculator)* Desenvolva uma calculadora mais orientada a objetos que conseguir. A calculadora deverá ter as seguintes operações: adição, subtração, divisão, multiplicação.
+### *(calculator)* Desenvolva uma calculadora que terá as seguintes operações: adição, subtração, divisão e multiplicação. O parâmetro de entrada será uma equação e a saída será sua resolução.
 ```sh
 $~> 1 + 1
 2.00 
