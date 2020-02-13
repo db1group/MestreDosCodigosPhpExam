@@ -30,7 +30,7 @@ Legenda: **Diretório**, *Arquivo* e [...] (outros arquivos e pastas quaisquer)
 |  
 |__ **atm**  
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ *index.php*  
-|&nbsp;&nbsp;&nbsp;&nbsp;|__ [...] 
+|&nbsp;&nbsp;&nbsp;&nbsp;|__ [...]  
 |  
 |__ **calculator**  
 |&nbsp;&nbsp;&nbsp;&nbsp;|__ *index.php*  
