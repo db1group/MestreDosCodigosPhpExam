@@ -1,3 +1,6 @@
+# *REPOSITÓRIO DEPRECIADO*
+### REPOSITÓRIO FOI MOVIDO PARA [https://github.com/db1group/MestreDosCodigosPhpExam](https://github.com/db1group/MestreDosCodigosPhpExam)
+
 # Mestre dos códigos PHP
 
 Para resolver a prova, é muito simples: 
