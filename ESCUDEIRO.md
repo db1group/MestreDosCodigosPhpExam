@@ -71,7 +71,7 @@ inteiro = 2
 retorno = Existem 1 letra 'a' na string ca.
 ```
 
-### *(palindrome)* Desenvolva um sistema que receba uma frase e mostre na tela apenas se a frase for um [palíndromo](https://brasilescola.uol.com.br/o-que-e/portugues/o-que-e-palindromo.htm).
+### *(palindrome)* Desenvolva um sistema que receba uma frase e mostre na tela apenas se a frase for um [palíndromo](https://brasilescola.uol.com.br/o-que-e/portugues/o-que-e-palindromo.htm). Caso ela não seja, retorne uma mensagem vazia.
 
 ### *(fibonacci)* Seguinto o algoritmo de [Fibonacci](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci), implemente um algorítmo PHP que recebe um número *n* e retorne o n-ésimo número da sequência de fibonacci em menos de X segundos.
 Exemplos:
