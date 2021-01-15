@@ -1,0 +1,31 @@
+{
+    "name": "mestre-dos-codigos/escudeiro",
+    "authors": [
+        {
+            "name": "Rhuan Gabriel",
+            "email": "rhuan.santos@db1.com.br"
+        }
+    ],
+    "scripts": {
+        "tests": "./vendor/bin/phpunit --colors tests"
+    },
+    "autoload": {
+        "psr-4": {
+            "Atm\\": "atm/src",
+            "Calculator\\": "calculator/src",
+            "CountA\\": "count-a/src",
+            "DDosTracker\\": "ddos-tracker/src",
+            "Fibonacci\\": "fibonacci/src",
+            "FizzBuzz\\": "fizz-buzz/src",
+            "Palindrome\\": "palindrome/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
