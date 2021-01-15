@@ -1,7 +1,5 @@
 <?php
 
-namespace Palindrome;
-
 class PalindromeHandler
 {
     public function resolve($palindrome): string

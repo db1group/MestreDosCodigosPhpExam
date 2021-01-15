@@ -1,5 +1,5 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/src/CountAHandler.php';
 
-echo (new \CountA\CountAHandler($argv[1], $argv[2]))->resolve();
+echo (new CountAHandler($argv[1], $argv[2]))->resolve();

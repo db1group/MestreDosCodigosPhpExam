@@ -1,7 +1,5 @@
 <?php
 
-namespace CountA;
-
 class CountAHandler
 {
     private $wordArgument;

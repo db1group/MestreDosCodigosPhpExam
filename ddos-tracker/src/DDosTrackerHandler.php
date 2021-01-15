@@ -1,7 +1,5 @@
 <?php
 
-namespace DDosTracker;
-
 class DDosTrackerHandler
 {
     const TIMEZONES_NAMES_BY_OFFSET = [

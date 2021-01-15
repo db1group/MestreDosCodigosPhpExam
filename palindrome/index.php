@@ -1,5 +1,5 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/src/PalindromeHandler.php';
 
-echo (new \Palindrome\PalindromeHandler())->resolve($argv[1]);
+echo (new PalindromeHandler())->resolve($argv[1]);

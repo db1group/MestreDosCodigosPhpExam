@@ -1,6 +1,6 @@
 <?php
 
-namespace Calculator\Handlers;
+require_once dirname(__FILE__) . '/EquationHandler.php';
 
 class DivisionHandler implements EquationHandler
 {

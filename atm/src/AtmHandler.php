@@ -1,7 +1,5 @@
 <?php
 
-namespace Atm;
-
 class AtmHandler
 {
     const EXISTING_NOTES = [

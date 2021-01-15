@@ -1,5 +1,5 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/src/DDosTrackerHandler.php';
 
-echo (new \DDosTracker\DDosTrackerHandler())->resolve($argv[1]);
+echo (new DDosTrackerHandler())->resolve($argv[1]);

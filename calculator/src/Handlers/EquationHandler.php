@@ -1,7 +1,5 @@
 <?php
 
-namespace Calculator\Handlers;
-
 interface EquationHandler
 {
     public function __construct(?EquationHandler $nextEquationHandler);

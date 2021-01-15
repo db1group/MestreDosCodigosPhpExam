@@ -1,7 +1,5 @@
 <?php
 
-namespace FizzBuzz;
-
 class FizzBuzzHandler
 {
     public function resolve(int $inputNumber): string

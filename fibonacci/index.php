@@ -1,5 +1,8 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+$inputNumber =  $argv[1];
+$V5 = sqrt(5);
+$Phi = (1 + $V5) / 2;
+$iPhi = -1 / $Phi;
 
-echo (new \Fibonacci\FibonacciHandler())->resolve($argv[1]);
+echo round((pow($Phi, $inputNumber) - pow($iPhi, $inputNumber)) / $V5);

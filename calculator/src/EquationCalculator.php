@@ -1,11 +1,9 @@
 <?php
 
-namespace Calculator;
-
-use Calculator\Handlers\DivisionHandler;
-use Calculator\Handlers\MultiplicationHandler;
-use Calculator\Handlers\SubtractionHandler;
-use Calculator\Handlers\SumHandler;
+require_once dirname(__FILE__) . '/Handlers/DivisionHandler.php';
+require_once dirname(__FILE__) . '/Handlers/MultiplicationHandler.php';
+require_once dirname(__FILE__) . '/Handlers/SubtractionHandler.php';
+require_once dirname(__FILE__) . '/Handlers/SumHandler.php';
 
 class EquationCalculator
 {

@@ -1,5 +1,5 @@
 <?php
 
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/src/AtmHandler.php';
 
-echo (new \Atm\AtmHandler())->resolve($argv[1]);
+echo (new AtmHandler())->resolve($argv[1]);
