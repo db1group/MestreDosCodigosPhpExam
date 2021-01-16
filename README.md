@@ -12,7 +12,7 @@ Sua prova vai estar resolvida no momento que você abrir um Pull Request contra 
 
 Faça o download do repositório na sua máquina:
 ```sh
-git checkout URL_DO_PROJETO
+git checkout git@github.com:db1group/MestreDosCodigosPhpExam.git
 ```
 
 Crie uma branch no modelo seu_usuario_do_github/prova_que_esta_fazendo:
