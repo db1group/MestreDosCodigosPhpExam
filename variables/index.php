@@ -18,9 +18,9 @@ $quest_options = [
 
 $answer = '';
 
-foreach ($quest_options as $option => $variableName) {
+foreach ($quest_options as $option => $variable_name) {
     try {
-        $variable = new \App\variables\src\entities\Variable($variableName);
+        $variable = new \App\variables\src\entities\Variable($variable_name);
     } catch (\App\variables\src\exceptions\InvalidVariableNameException $exception) {
         $answer .= $option;
     }
