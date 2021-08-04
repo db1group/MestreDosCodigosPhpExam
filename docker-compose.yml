@@ -1,0 +1,22 @@
+version: '3'
+services:
+    php:
+        image: php:7.4-apache
+        container_name: php_olivetti
+        ports:
+          - 8081:80
+        volumes:
+            - C:\Users\luis.olivetti\Documents\GitHub\MestreDosCodigosPhpExam\.github:/var/www/html/
+    composer:
+        image: composer:2.1.5
+        container_name: composer_olivetti
+        environment:
+          - COMPOSER_CACHE_DIR=/app/var/cache/composer
+        volumes:
+          - C:\Users\luis.olivetti\Documents\GitHub\MestreDosCodigosPhpExam\.github:/app
+    phpunit:
+        image: php:7.4-apache
+        volumes:
+          - C:\Users\luis.olivetti\Documents\GitHub\MestreDosCodigosPhpExam\.github:/app
+        working_dir: /app
+        entrypoint: vendor/bin/phpunit      

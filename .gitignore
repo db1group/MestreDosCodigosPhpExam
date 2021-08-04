@@ -1,1 +1,4 @@
 .idea
+.github/var
+.github/vendor
+.github/.phpunit.cache

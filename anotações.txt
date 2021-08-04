@@ -1,0 +1,5 @@
+No terminal executei para instalar o phpunit versão superior a 9
+docker-compose run composer require --dev phpunit/phpunit ^9
+
+Para executar um teste
+docker-compose run php vendor/bin/phpunit --colors
