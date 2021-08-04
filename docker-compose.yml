@@ -7,6 +7,13 @@ services:
           - 8081:80
         volumes:
             - C:\Users\luis.olivetti\Documents\GitHub\MestreDosCodigosPhpExam\.github:/var/www/html/
+    php-cli:
+      image: php:7.4-cli
+      container_name: php_cli_olivetti
+      ports:
+        - 8050:80
+      volumes:
+          - C:\Users\luis.olivetti\Documents\GitHub\MestreDosCodigosPhpExam\.github:/var/www/html/          
     composer:
         image: composer:2.1.5
         container_name: composer_olivetti

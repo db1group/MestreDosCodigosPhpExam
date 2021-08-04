@@ -1,6 +1,5 @@
 <?php
-
-include("variable.php");
+include_once("variable.php");
 
 // Referência: https://www.php.net/manual/pt_BR/language.variables.basics.php
 
@@ -43,5 +42,4 @@ foreach ($questions as $question) {
     }
 }
 echo trim($result);
-
 ?>

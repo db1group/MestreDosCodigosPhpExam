@@ -3,3 +3,23 @@ docker-compose run composer require --dev phpunit/phpunit ^9
 
 Para executar um teste
 docker-compose run php vendor/bin/phpunit --colors
+
+======================
+Questão trouble-array
+
+array("a", "b", "c", "d");
+$a[] = "e";
+$a[] = "f";
+$a[] = "g";
+
+Resultado: Array ( [0] => e [1] => f [2] => g )
+
+Sem passar o índice, adiciona no fim do array o valor, por isso a resposta é A.
+======================
+
+Executar em linha de comando com argumentos
+Obs.: Tive que subir o php cli
+
+docker-compose run php-cli php -f /var/www/html/count-a/index.php ana 10
+
+

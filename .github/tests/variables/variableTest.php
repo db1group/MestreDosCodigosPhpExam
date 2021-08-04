@@ -1,5 +1,5 @@
 <?php
-include("./variables/variable.php");
+include_once("./variables/variable.php");
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,4 +35,3 @@ class VariableTest extends TestCase
     self::assertEquals($questionExpectedValue, $nameValid, "Test Fail in question $questionLetter.");
   }
 }
-?>
