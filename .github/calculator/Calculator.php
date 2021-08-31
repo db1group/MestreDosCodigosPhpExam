@@ -19,13 +19,8 @@ class Calculator {
         return number_format($final, 2, '.', '');
     }
 
-    private function resolvePriorityOperator(array $terms):array {
+    private function resolvePriorityOperator(array $terms): array {
         for ($i = 0; $i <= count($terms); $i++) {
-
-            if (!$terms[$i]) {
-                continue;
-            }
-
             if ($terms[$i] == '/' || $terms[$i] == '*') {
 
                 $operator = $terms[$i];
@@ -41,19 +36,14 @@ class Calculator {
                 $terms = array_replace($terms, array($i - 1 => $calculatedValue));
                 array_splice($terms, $i, 2);
 
-                $terms = $this->resolvePriorityOperator($terms);
+                $i--;
             }
         }
         return $terms;
     }
 
-    private function finalCalculate(array $terms):array {
+    private function finalCalculate(array $terms): array {
         for ($i = 0; $i <= count($terms); $i++) {
-
-            if (!$terms[$i]) {
-                continue;
-            }
-
             if ($terms[$i] == '+' || $terms[$i] == '-' || $terms[$i] == '–') {
 
                 $operator = $terms[$i];
@@ -69,7 +59,7 @@ class Calculator {
                 $terms = array_replace($terms, array($i - 1 => $calculatedValue));
                 array_splice($terms, $i, 2);
 
-                $terms = $this->finalCalculate($terms);
+                $i--;
             }
         }
         return $terms;
