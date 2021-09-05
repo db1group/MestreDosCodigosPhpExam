@@ -4,7 +4,7 @@ namespace MestreCodigo\Calculator;
 
 class Calculator {
 
-    public function calculate(string $equation):string {
+    public function calculate(string $equation): string {
         $terms = explode(' ', $equation);
 
         try {

@@ -1,5 +1,8 @@
 <?php
-include_once("variable.php");
+
+include_once("Variable.php");
+
+use MestreCodigo\Variable\Variable;
 
 // Referência: https://www.php.net/manual/pt_BR/language.variables.basics.php
 
@@ -42,4 +45,3 @@ foreach ($questions as $question) {
     }
 }
 echo trim($result);
-?>

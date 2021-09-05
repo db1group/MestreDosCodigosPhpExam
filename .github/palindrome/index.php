@@ -1,5 +1,5 @@
 <?php
-require_once('palindrome.php');
+require_once('Palindrome.php');
 
 use MestreCodigo\Palindrome\Palindrome;
 

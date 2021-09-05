@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\MestreCodigo;
+namespace Test\MestreCodigo\Calculator;
 
 include_once('./calculator/Calculator.php');
 
@@ -11,6 +11,7 @@ use PHPUnit\Framework\TestCase;
  * @covers Calculator
  */
 class CalculatorTest extends TestCase {
+
     private $calculator;
 
     protected function setUp(): void {

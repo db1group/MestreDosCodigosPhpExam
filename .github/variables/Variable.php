@@ -1,7 +1,10 @@
-<?php 
+<?php
+
+namespace MestreCodigo\Variable;
 
 class Variable {
-    function validateName($name):bool {
+
+    function validateName($name): bool {
         if ($name == '$this') {
             return false;
         }
@@ -14,5 +17,3 @@ class Variable {
         }
     }
 }
-
-?>

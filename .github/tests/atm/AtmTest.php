@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\MestreCodigo;
+namespace Test\MestreCodigo\Atm;
 
 include_once('./atm/Atm.php');
 
@@ -10,12 +10,11 @@ use PHPUnit\Framework\TestCase;
 /**
  * @covers Atm
  */
-class AtmTest extends TestCase
-{
+class AtmTest extends TestCase {
+
     private $atm;
 
-    protected function setUp(): void
-    {
+    protected function setUp(): void {
         $this->atm = new atm();
     }
 
@@ -26,8 +25,7 @@ class AtmTest extends TestCase
      *           [49, "[20 => 2, 5 => 1, 1 => 4]"]
      *           [1, "[1 => 1]"]
      */
-    public function testCalculateMoneyBills(int $withdrawalAmount, string $expectedValue): void
-    {
+    public function testCalculateMoneyBills(int $withdrawalAmount, string $expectedValue): void {
         $calculatedMoneyBills = $this->atm->getCalculateMoneyBills($withdrawalAmount);
 
         self::assertEquals($expectedValue, $calculatedMoneyBills, "Test Fail in Atm with $withdrawalAmount.");

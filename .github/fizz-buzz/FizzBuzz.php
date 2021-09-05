@@ -3,7 +3,8 @@
 namespace MestreCodigo\FizzBuzz;
 
 class FizzBuzz {
-    public function identifyText(int $value) {
+
+    public function identifyText(int $value): string {
         $byThree = $value % 3 == 0;
         $byFive = $value % 5 == 0;
 

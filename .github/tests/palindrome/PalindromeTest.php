@@ -1,7 +1,8 @@
 <?php
+
 namespace Test\MestreCodigo\Palindrome;
 
-include_once("./palindrome/palindrome.php");
+include_once("./palindrome/Palindrome.php");
 
 use MestreCodigo\Palindrome\Palindrome;
 use PHPUnit\Framework\TestCase;
@@ -9,12 +10,11 @@ use PHPUnit\Framework\TestCase;
 /**
  * @covers Palindrome
  */
-class PalindromeTest extends TestCase
-{
+class PalindromeTest extends TestCase {
+
     private $palindrome;
 
-    protected function setUp(): void
-    {
+    protected function setUp(): void {
         $this->palindrome = new Palindrome();
     }
 
@@ -28,8 +28,7 @@ class PalindromeTest extends TestCase
      *           ["Seco de raiva, coloco no colo caviar e doces", true]
      *           ["uma frase qualquer", false]
      */
-    public function testIsPalindrome(string $phrase, bool $expectedValue): void
-    {
+    public function testIsPalindrome(string $phrase, bool $expectedValue): void {
         $isPalindrome = $this->palindrome->isPalindrome($phrase);
 
         self::assertEquals($expectedValue, $isPalindrome, "Test Fail in phrase $phrase.");

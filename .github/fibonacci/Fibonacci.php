@@ -2,9 +2,9 @@
 
 namespace MestreCodigo\Fibonacci;
 
-class Fibonacci
-{
-    public function getNthValue(int $n):int {
+class Fibonacci {
+
+    public function getNthValue(int $n): int {
         if ($n == 0) {
             return 0;
         }

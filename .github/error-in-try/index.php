@@ -1,3 +1,2 @@
 <?php
-echo 'D';
-?>
+    echo 'D';

@@ -10,12 +10,11 @@ use PHPUnit\Framework\TestCase;
 /**
  * @covers Fibonacci
  */
-class FibonacciTest extends TestCase
-{
+class FibonacciTest extends TestCase {
+
     private $fibonacci;
 
-    protected function setUp(): void
-    {
+    protected function setUp(): void {
         $this->fibonacci = new Fibonacci();
     }
 
@@ -29,8 +28,7 @@ class FibonacciTest extends TestCase
      *           [8, 21]
      *           [37, 24157817]
      */
-    public function testNthNumberOfDeterminedPosition(int $position, int $expectedValue): void
-    {
+    public function testNthNumberOfDeterminedPosition(int $position, int $expectedValue): void {
         $calculatedNth = $this->fibonacci->getNthValue($position);
 
         self::assertEquals($expectedValue, $calculatedNth, "Test Fail in Fibonacci Nth number of position $position.");

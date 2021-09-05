@@ -11,6 +11,7 @@ use PHPUnit\Framework\TestCase;
  * @covers FizzBuzz
  */
 class FizzBuzzTest extends TestCase {
+
     private $fizzBuzz;
 
     protected function setUp(): void {

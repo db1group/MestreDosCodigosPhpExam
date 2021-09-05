@@ -2,9 +2,9 @@
 
 namespace MestreCodigo\Atm;
 
-class Atm
-{
-    function getCalculateMoneyBills(int $valueOriginal):string {
+class Atm {
+
+    function getCalculateMoneyBills(int $valueOriginal): string {
         if ($valueOriginal == 0) {
             return 'Este valor não é válido';
         }
